@@ -1,0 +1,19 @@
+Edubot 	KEYWORD1
+edu_setup	KEYWORD2
+edu_rotaciona	KEYWORD2
+edu_moveReto	KEYWORD2
+edu_para	KEYWORD2
+
+LibSonar	KEYWORD1
+Sonar	KEYWORD1
+medeDistancia	KEYWORD2
+
+LibMotor	KEYWORD1
+Mdrive	KEYWORD1
+init	KEYWORD2
+setPWM	KEYWORD2
+setVoltage	KEYWORD2
+stop	KEYWORD2
+
+Encoder KEYWORD1
+read KEYWORD2

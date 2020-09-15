@@ -1,0 +1,6 @@
+LibMotor	KEYWORD1
+Mdrive	KEYWORD1
+init	KEYWORD2
+setPWM	KEYWORD2
+setVoltage	KEYWORD2
+stop	KEYWORD2
