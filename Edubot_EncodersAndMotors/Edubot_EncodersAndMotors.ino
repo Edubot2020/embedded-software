@@ -127,6 +127,16 @@ void decodeCommand(String message){
             digitalWrite(LEFT_BRIDGE_A, LOW);
             digitalWrite(LEFT_BRIDGE_B, LOW);
             break;
+
+        case 'w':
+            int iSep = message.indexOf(';', 1);
+            if (iSep > 1)
+            {
+                double left  = message.substring(1, iSep).toDouble();
+                double right = message.substring(iSep + 1).toDouble();
+                edu_wheel(left, right);
+            }
+            break;
         
         default:;
     }
