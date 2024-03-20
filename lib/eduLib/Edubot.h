@@ -258,6 +258,24 @@ void edu_rotate(double degs)
 	 edu_stop();delay(300);
 }
 
+void edu_wheel(double left, double right)
+{
+	if (left > 1.0)
+		left = 1.0;
+	else if (left < -1.0)
+		left = -1.0;
+
+	if (right > 1.0)
+		right = 1.0;
+	else if (right < -1.0)
+		right = -1.0;
+
+	wheelLeft.setVoltage(maxMvolt*left);
+	wheelRight.setVoltage(maxMvolt*right);
+	
+	control_on = false;
+}
+
 
 void setup_timer2()
 {
